@@ -15,9 +15,13 @@
 ```
 
 **Şıklar:**
+
 A) Bir veritabanındaki öğrenci bilgilerini alfabetik sırayla listelemek
+
 B) Öğrenci bilgilerini HTML tablosu formatında görüntülemek
+
 C) Öğrenci kayıtlarını silmek için bir form oluşturmak
+
 D) Öğrencilerin bilgilerini düzenlemek için bir güncelleme formu sağlamak
 
 **Cevap:** B) Öğrenci bilgilerini HTML tablosu formatında görüntülemek
