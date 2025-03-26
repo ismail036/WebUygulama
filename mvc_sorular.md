@@ -18,9 +18,13 @@
 ```
 
 **Şıklar:**
+
 A) Öğrenci verilerini JSON formatında göstermek
+
 B) Öğrenci verilerini HTML tablo formatında listelemek
+
 C) Öğrenci verilerini veritabanına kaydetmek
+
 D) Öğrenci verilerini düzenlemek için form oluşturmak
 
 **Cevap:** B) Öğrenci verilerini HTML tablo formatında listelemek
@@ -35,9 +39,13 @@ D) Öğrenci verilerini düzenlemek için form oluşturmak
 **Soru:** @Html.Partial() ve @await Html.PartialAsync() arasındaki temel fark nedir?
 
 **Şıklar:**
+
 A) Partial senkron çalışırken, PartialAsync asenkron çalışır
+
 B) PartialAsync daha az bellek kullanır
+
 C) Partial daha hızlı çalışır
+
 D) İkisi arasında hiçbir fark yoktur
 
 **Cevap:** A) Partial senkron çalışırken, PartialAsync asenkron çalışır
@@ -52,9 +60,13 @@ D) İkisi arasında hiçbir fark yoktur
 **Soru:** Aşağıdaki tag helper kullanımlarından hangisi yanlıştır?
 
 **Şıklar:**
+
 A) `<a asp-controller="Home" asp-action="Index">Anasayfa</a>`
+
 B) `<form asp-action="Save" method="post">`
+
 C) `<input type="text" asp-for="@Model.Name">`
+
 D) `<div asp-validation="@Model.Email"></div>`
 
 **Cevap:** D) `<div asp-validation="@Model.Email"></div>`
@@ -69,9 +81,13 @@ D) `<div asp-validation="@Model.Email"></div>`
 **Soru:** Aşağıdakilerden hangisi bir Model sınıfının özelliklerinden değildir?
 
 **Şıklar:**
+
 A) Validation kuralları içerebilir
+
 B) Veritabanı ilişkilerini yönetir
+
 C) View'a veri taşır
+
 D) DTO (Data Transfer Object) olarak kullanılır
 
 **Cevap:** B) Veritabanı ilişkilerini yönetir
@@ -86,9 +102,13 @@ D) DTO (Data Transfer Object) olarak kullanılır
 **Soru:** MVC mimarisinde Controller'ın temel görevi nedir?
 
 **Şıklar:**
+
 A) Veritabanı işlemlerini yönetmek
+
 B) Kullanıcı arayüzünü oluşturmak
+
 C) Model ve View arasındaki iletişimi yönetmek
+
 D) İş mantığını (business logic) içermek
 
 **Cevap:** C) Model ve View arasındaki iletişimi yönetmek
@@ -103,9 +123,13 @@ D) İş mantığını (business logic) içermek
 **Soru:** Entity Framework Core'da DbContext sınıfı için aşağıdakilerden hangisi doğrudur?
 
 **Şıklar:**
+
 A) Her istek için yeni bir instance oluşturulmalıdır
+
 B) Tüm uygulama için tek bir instance kullanılmalıdır
+
 C) Instance yönetimi önemli değildir
+
 D) Her metot için yeni bir instance oluşturulmalıdır
 
 **Cevap:** A) Her istek için yeni bir instance oluşturulmalıdır
@@ -120,9 +144,13 @@ D) Her metot için yeni bir instance oluşturulmalıdır
 **Soru:** ICommonDal<T> interface'i için aşağıdaki metodlardan hangisi gereksizdir?
 
 **Şıklar:**
+
 A) `T Get(Expression<Func<T, bool>> filter)`
+
 B) `List<T> GetList()`
+
 C) `T Add(T entity)`
+
 D) `void SaveChanges()`
 
 **Cevap:** D) `void SaveChanges()`
@@ -137,9 +165,13 @@ D) `void SaveChanges()`
 **Soru:** Aşağıdakilerden hangisi bir web uygulamasında caching kullanmanın avantajlarından değildir?
 
 **Şıklar:**
+
 A) Veritabanı yükünü azaltır
+
 B) Yanıt süresini iyileştirir
+
 C) Veritabanı güvenliğini artırır
+
 D) Sunucu kaynaklarını optimize eder
 
 **Cevap:** C) Veritabanı güvenliğini artırır
@@ -154,9 +186,13 @@ D) Sunucu kaynaklarını optimize eder
 **Soru:** Aşağıdaki servis kayıt yöntemlerinden hangisi logging servisi için en uygundur?
 
 **Şıklar:**
+
 A) services.AddScoped<ILogger, Logger>()
+
 B) services.AddTransient<ILogger, Logger>()
+
 C) services.AddSingleton<ILogger, Logger>()
+
 D) new Logger()
 
 **Cevap:** C) services.AddSingleton<ILogger, Logger>()
@@ -171,9 +207,13 @@ D) new Logger()
 **Soru:** DbContext için hangi service lifetime kullanılmalıdır?
 
 **Şıklar:**
+
 A) Singleton
+
 B) Scoped
+
 C) Transient
+
 D) Static
 
 **Cevap:** B) Scoped
@@ -201,9 +241,13 @@ public class RedisCacheManager : ICacheManager
 ```
 
 **Şıklar:**
+
 A) IDatabase türü yanlış kullanılmış
+
 B) Null kontrolü yapılmamış
+
 C) Generic tip kısıtlaması eksik
+
 D) Redis bağlantısı hatalı
 
 **Cevap:** B) Null kontrolü yapılmamış
@@ -225,9 +269,13 @@ public T Get<T>(string key)
 **Soru:** Aşağıdaki servis kayıt senaryolarından hangisi yanlıştır?
 
 **Şıklar:**
+
 A) `services.AddTransient<IEmailService, EmailService>()`
+
 B) `services.AddScoped<DbContext, ApplicationDbContext>()`
+
 C) `services.AddSingleton<DbContext, ApplicationDbContext>()`
+
 D) `services.AddSingleton<IConfiguration, Configuration>()`
 
 **Cevap:** C) `services.AddSingleton<DbContext, ApplicationDbContext>()`
@@ -242,9 +290,13 @@ D) `services.AddSingleton<IConfiguration, Configuration>()`
 **Soru:** Aşağıdaki form tag helper kullanımlarından hangisi doğrudur?
 
 **Şıklar:**
+
 A) `<form asp-action="Save" asp-antiforgery="false">`
+
 B) `<form asp-controller="Home" asp-action="Index" method="get">`
+
 C) `<form asp-area="Admin" asp-controller="Users" method="delete">`
+
 D) `<form asp-action="Delete" asp-route-id="@Model.Id" method="DELETE">`
 
 **Cevap:** B) `<form asp-controller="Home" asp-action="Index" method="get">`
@@ -259,9 +311,13 @@ D) `<form asp-action="Delete" asp-route-id="@Model.Id" method="DELETE">`
 **Soru:** Aşağıdaki model binding yaklaşımlarından hangisi yanlıştır?
 
 **Şıklar:**
+
 A) `public IActionResult Edit([FromBody] Product product)`
+
 B) `public IActionResult Create([FromForm] ProductViewModel model)`
+
 C) `public IActionResult Delete([FromRoute] int id)`
+
 D) `public IActionResult Update([FromQuery] Product product)`
 
 **Cevap:** D) `public IActionResult Update([FromQuery] Product product)`
@@ -276,9 +332,13 @@ D) `public IActionResult Update([FromQuery] Product product)`
 **Soru:** View Component'ler ile Partial View'lar arasındaki fark hangisi değildir?
 
 **Şıklar:**
+
 A) View Component'ler bağımsız iş mantığı içerebilir
+
 B) View Component'ler constructor injection destekler
+
 C) View Component'ler async operasyonları destekler
+
 D) View Component'ler layout'ta kullanılamaz
 
 **Cevap:** D) View Component'ler layout'ta kullanılamaz
@@ -293,9 +353,13 @@ D) View Component'ler layout'ta kullanılamaz
 **Soru:** DbContext'te aşağıdaki Fluent API kullanımlarından hangisi yanlıştır?
 
 **Şıklar:**
+
 A) `modelBuilder.Entity<User>().HasIndex(u => u.Email).IsUnique()`
+
 B) `modelBuilder.Entity<Order>().HasMany(o => o.Items).WithOne(i => i.Order)`
+
 C) `modelBuilder.Entity<Product>().Property(p => p.Price).HasColumnType("money")`
+
 D) `modelBuilder.Entity<Customer>().HasData(new { Id = 1, Name = "John" })`
 
 **Cevap:** D) `modelBuilder.Entity<Customer>().HasData(new { Id = 1, Name = "John" })`
@@ -314,9 +378,13 @@ modelBuilder.Entity<Customer>().HasData(
 **Soru:** Aşağıdaki action filter kullanımlarından hangisi doğrudur?
 
 **Şıklar:**
+
 A) `[Authorize]`
+
 B) `[ValidateAntiForgeryToken(Order = 2)]`
+
 C) `[ResponseCache(NoStore = true)]`
+
 D) Hepsi doğrudur
 
 **Cevap:** D) Hepsi doğrudur
@@ -331,9 +399,13 @@ D) Hepsi doğrudur
 **Soru:** Aşağıdaki route tanımlamalarından hangisi hatalıdır?
 
 **Şıklar:**
+
 A) `[Route("api/[controller]")]`
+
 B) `[Route("api/{controller}/{action}/{id?}")]`
+
 C) `[Route("api/[controller]/[action]/{id:int}")]`
+
 D) `[Route("api/[controller]/[action]/{id:string?}")]`
 
 **Cevap:** B) `[Route("api/{controller}/{action}/{id?}")]`
@@ -348,9 +420,13 @@ D) `[Route("api/[controller]/[action]/{id:string?}")]`
 **Soru:** Aşağıdakilerden hangisi built-in DI container'ın bir sınırlaması değildir?
 
 **Şıklar:**
+
 A) Property injection desteklenmez
+
 B) Scoped servisler singleton servislere inject edilemez
+
 C) Named instance'lar desteklenmez
+
 D) Constructor injection desteklenmez
 
 **Cevap:** D) Constructor injection desteklenmez
@@ -365,9 +441,13 @@ D) Constructor injection desteklenmez
 **Soru:** Global exception handling için aşağıdaki yaklaşımlardan hangisi en uygunudur?
 
 **Şıklar:**
+
 A) Her action'da try-catch blokları kullanmak
+
 B) Base controller'da exception handling yapmak
+
 C) Middleware kullanarak global exception handler yazmak
+
 D) View'larda error handling yapmak
 
 **Cevap:** C) Middleware kullanarak global exception handler yazmak
@@ -410,9 +490,13 @@ public class ProductController : Controller
 ```
 
 **Şıklar:**
+
 A) 1
+
 B) 2
+
 C) 3
+
 D) 4
 
 **Cevap:** C) 3
@@ -477,9 +561,13 @@ public class CustomAuthMiddleware
 ```
 
 **Şıklar:**
+
 A) Constructor parametresi yanlış isimlendirilmiş
+
 B) Invoke metodu async değil
+
 C) 401 durumunda next delegate çağrılmamalı
+
 D) Hepsi
 
 **Cevap:** D) Hepsi
@@ -535,9 +623,13 @@ public class UserViewModel
 ```
 
 **Şıklar:**
+
 A) Email validasyonu eksik
+
 B) Password için maksimum uzunluk belirtilmemiş
+
 C) BirthDate için range kontrolü yok
+
 D) Hepsi
 
 **Cevap:** D) Hepsi
@@ -614,9 +706,13 @@ public class ProductRepository : IProductRepository
 ```
 
 **Şıklar:**
+
 A) 2
+
 B) 3
+
 C) 4
+
 D) 5
 
 **Cevap:** C) 4
@@ -696,9 +792,13 @@ public void ConfigureServices(IServiceCollection services)
 ```
 
 **Şıklar:**
+
 A) DbContext konfigürasyonu eksik
+
 B) Authentication konfigürasyonu eksik
+
 C) CORS politikası eksik
+
 D) Hepsi
 
 **Cevap:** D) Hepsi
@@ -786,9 +886,13 @@ public class ProductController : Controller
 ```
 
 **Şıklar:**
+
 A) GetProduct metodu
+
 B) CreateProduct metodu
+
 C) DownloadReport metodu
+
 D) ShowProduct metodu
 
 **Cevap:** B) CreateProduct metodu
@@ -853,9 +957,13 @@ var result4 = await _context.Orders
 ```
 
 **Şıklar:**
+
 A) Sorgu 1
+
 B) Sorgu 2
+
 C) Sorgu 3
+
 D) Sorgu 4
 
 **Cevap:** C) Sorgu 3
@@ -888,9 +996,13 @@ public class CartSummaryViewComponent
 ```
 
 **Şıklar:**
+
 A) Base class eksik
+
 B) Invoke metodu async değil
+
 C) Model tipi belirtilmemiş
+
 D) A ve B
 
 **Cevap:** D) A ve B
@@ -942,9 +1054,13 @@ public class ProductsController : ControllerBase
 ```
 
 **Şıklar:**
+
 A) Route 1
+
 B) Route 2
+
 C) Route 3
+
 D) Route 4
 
 **Cevap:** C) Route 3
@@ -1005,9 +1121,13 @@ public class OrderController : Controller
 ```
 
 **Şıklar:**
+
 A) Yaklaşım 1
+
 B) Yaklaşım 2
+
 C) Yaklaşım 3
+
 D) Yaklaşım 4
 
 **Cevap:** D) Yaklaşım 4
@@ -1061,9 +1181,13 @@ public class Startup
 ```
 
 **Şıklar:**
+
 A) Senaryo 1
+
 B) Senaryo 2
+
 C) Senaryo 3
+
 D) Senaryo 4
 
 **Cevap:** C) Senaryo 3
@@ -1170,9 +1294,13 @@ app.UseExceptionHandler("/Home/Error");
 ```
 
 **Şıklar:**
+
 A) Implementasyon 1
+
 B) Implementasyon 2
+
 C) Implementasyon 3
+
 D) Implementasyon 4
 
 **Cevap:** C) Implementasyon 3
@@ -1251,9 +1379,13 @@ public class UsersController : ControllerBase
 ```
 
 **Şıklar:**
+
 A) Yaklaşım 1
+
 B) Yaklaşım 2
+
 C) Yaklaşım 3
+
 D) Yaklaşım 4
 
 **Cevap:** C) Yaklaşım 3
@@ -1324,9 +1456,13 @@ public class DataHub : Hub
 ```
 
 **Şıklar:**
+
 A) Hub 1
+
 B) Hub 2
+
 C) Hub 3
+
 D) Hub 4
 
 **Cevap:** B) Hub 2
@@ -1395,9 +1531,13 @@ public async Task<Product> GetProductById(int id)
 ```
 
 **Şıklar:**
+
 A) Implementasyon 1
+
 B) Implementasyon 2
+
 C) Implementasyon 3
+
 D) Implementasyon 4
 
 **Cevap:** C) Implementasyon 3
@@ -1429,15 +1569,19 @@ D) Implementasyon 4
                 <h3>@product.Name</h3>
                 <p>Fiyat: @product.Price</p>
             }
-        </div>
+        }
     }
 </div>
 ```
 
 **Şıklar:**
+
 A) HTML div kapanış etiketi yanlış yerde
+
 B) discountedPrice değişkeni tanımlaması hatalı
+
 C) else bloğu yanlış konumda
+
 D) Hepsi
 
 **Cevap:** A) HTML div kapanış etiketi yanlış yerde
@@ -1496,9 +1640,13 @@ public class OrderViewModel
 ```
 
 **Şıklar:**
+
 A) Email için [EmailAddress]
+
 B) TotalAmount için [Range]
+
 C) CustomerName için [StringLength]
+
 D) Hepsi
 
 **Cevap:** D) Hepsi
@@ -1561,9 +1709,13 @@ public class ProductsController : ControllerBase
 ```
 
 **Şıklar:**
+
 A) Route 1
+
 B) Route 2
+
 C) Route 3
+
 D) Route 4
 
 **Cevap:** C) Route 3
@@ -1620,9 +1772,13 @@ public async Task<IActionResult> CreateUser([FromBody] CreateUserDto dto)
 ```
 
 **Şıklar:**
+
 A) Method 1
+
 B) Method 2
+
 C) Method 3
+
 D) Method 4
 
 **Cevap:** D) Method 4
@@ -1679,9 +1835,13 @@ var result4 = await _context.Orders
 ```
 
 **Şıklar:**
+
 A) Query 1
+
 B) Query 2
+
 C) Query 3
+
 D) Query 4
 
 **Cevap:** C) Query 3
@@ -1752,9 +1912,13 @@ public class ProfileController : Controller
 ```
 
 **Şıklar:**
+
 A) Implementation 1
+
 B) Implementation 2
+
 C) Implementation 3
+
 D) Implementation 4
 
 **Cevap:** D) Implementation 4
@@ -1874,9 +2038,13 @@ public class CachingMiddleware
 ```
 
 **Şıklar:**
+
 A) Middleware 1
+
 B) Middleware 2
+
 C) Middleware 3
+
 D) Middleware 4
 
 **Cevap:** C) Middleware 3
@@ -1975,9 +2143,13 @@ public class AuthService
 ```
 
 **Şıklar:**
+
 A) Approach 1
+
 B) Approach 2
+
 C) Approach 3
+
 D) Approach 4
 
 **Cevap:** D) Approach 4
@@ -2066,9 +2238,13 @@ public class PaymentService
 ```
 
 **Şıklar:**
+
 A) Implementation 1
+
 B) Implementation 2
+
 C) Implementation 3
+
 D) Implementation 4
 
 **Cevap:** A) Implementation 1
@@ -2152,9 +2328,13 @@ public class UserService
 ```
 
 **Şıklar:**
+
 A) Approach 1
+
 B) Approach 2
+
 C) Approach 3
+
 D) Approach 4
 
 **Cevap:** C) Approach 3
