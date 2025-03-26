@@ -40,8 +40,11 @@ D) Öğrencilerin bilgilerini düzenlemek için bir güncelleme formu sağlamak
 
 **Şıklar:**
 A) Header bölümünü başka bir sayfadan içe aktarmak
+
 B) Header bölümünü CSS ile stilize etmek
+
 C) Header bölümünde JavaScript kodu çalıştırmak
+
 D) Header bölümünü veritabanına kaydetmek
 
 **Cevap:** A) Header bölümünü başka bir sayfadan içe aktarmak
@@ -57,8 +60,11 @@ D) Header bölümünü veritabanına kaydetmek
 
 **Şıklar:**
 A) Gönderilecek form verilerini doğrulamak için kullanılır
+
 B) Formun hangi controller'a ve hangi action'a gönderileceğini belirtir
+
 C) Form elemanlarını modeldeki ilgili özelliklerle ilişkilendirir
+
 D) HTML elementlerine CSS sınıfları eklemek için kullanılır
 
 **Cevap:** C) Form elemanlarını modeldeki ilgili özelliklerle ilişkilendirir
@@ -74,8 +80,11 @@ D) HTML elementlerine CSS sınıfları eklemek için kullanılır
 
 **Şıklar:**
 A) Model sınıfları veritabanı tablolarıyla doğrudan ilişkilendirilirken entity sınıfları veritabanı ile ilişkilendirilmez
+
 B) Entity sınıfları veritabanı tablolarını temsil eder ve genellikle
+
 C) Model sınıfları yalnızca veri taşımak için kullanılırken entity sınıfları hem veri taşıma hem de iş mantığı işlemleri gerçekleştirir
+
 D) Entity sınıfları yalnızca statik veriler içerirken model sınıfları dinamik verilerle çalışmak için tasarlanmıştır
 
 **Cevap:** C) Model sınıfları yalnızca veri taşımak için kullanılırken entity sınıfları hem veri taşıma hem de iş mantığı işlemleri gerçekleştirir
@@ -100,8 +109,11 @@ Model ve Entity sınıfları arasındaki temel farklar:
 
 **Şıklar:**
 A) Kullanıcıya gösterilen veri ve kullanıcı arayüzü elementlerini yönetir
+
 B) Kullanıcı girişlerine yanıt olarak model ve görünüm arasındaki veri akışını kontrol eder
+
 C) Kullanıcıya gösterilen bilgilerin görsel sunumunu sağlar
+
 D) Uygulamanın veritabanı mantık ve sunucu tarafı işlevlerini içerir
 
 **Cevap:** D) Uygulamanın veritabanı mantık ve sunucu tarafı işlevlerini içerir
@@ -119,8 +131,11 @@ MVC'de Model bileşeni:
 
 **Şıklar:**
 A) Kullanıcı isteklerini karşılamak ve bu isteklere yanıt vermek
+
 B) Uygun modeli seçmek ve veri güncellemelerini model üzerinde gerçekleştirmek
+
 C) Veri erişimi ve iş mantığını yönetmek
+
 D) İstemciye sunulacak son veri görünümünü seçmek
 
 **Cevap:** C) Veri erişimi ve iş mantığını yönetmek
@@ -139,8 +154,11 @@ Veri erişimi ve iş mantığı Model katmanının sorumluluğundadır, Controll
 
 **Şıklar:**
 A) İstemci tarafı önbellekleme
+
 B) Sunucu tarafı önbellekleme
+
 C) Veritabanı önbellekleme
+
 D) Veritabanı normalizasyonu
 
 **Cevap:** D) Veritabanı normalizasyonu
@@ -158,8 +176,11 @@ Veritabanı normalizasyonu bir veri modelleme tekniğidir ve önbellekleme ile i
 
 **Şıklar:**
 A) Kullanıcı arayüzü bileşenlerini ve kullanıcı etkileşimlerini yönetir
+
 B) Uygulamanın iş mantığını ve veri erişim katmanını içerir
+
 C) İstekleri karşılayan ve uygun yanıtları oluşturan kontrol edicileri içerir
+
 D) [Şık eksik]
 
 **Cevap:** B) Uygulamanın iş mantığını ve veri erişim katmanını içerir
@@ -240,8 +261,11 @@ public interface ICommonDal<T>
 
 **Şıklar:**
 A) Belirli bir koşula göre bir nesne döndüren Get(Expression<Func<T, bool>> filter) metodunu kullanmak
+
 B) Belirli bir koşula göre nesne listesi döndüren GetList(Expression<Func<T, bool>>? filter = null) metodunu kullanmak
+
 C) ICommonDal<T> arayüzündeki tüm metodların asenkron versiyonlarını sağlamak
+
 D) Belirtilen bir Department nesnesini güncelleyen bir Update(Department entity) metodunu çağırmak
 
 **Cevap:** C) ICommonDal<T> arayüzündeki tüm metodların asenkron versiyonlarını sağlamak
@@ -262,8 +286,11 @@ D) Belirtilen bir Department nesnesini güncelleyen bir Update(Department entity
 
 **Şıklar:**
 A) Tüm servis sınıflarını statik olarak tanımlamak ve doğrudan çağırmak
+
 B) Servisleri gerektiği yerde new anahtar kelimesi ile yeni nesneler olarak oluşturmak
+
 C) Uygulamanın başlangıç sınıfında (Program.cs) bir servis konteyneri kullanarak servisleri kaydetmek ve gerektiğinde bu konteyner aracılığıyla servisleri çözümlemek
+
 D) Veritabanı bağlantılarını her seferinde yeniden oluşturmak ve bağımlılıkları manuel olarak yönetmek
 
 **Cevap:** C) Uygulamanın başlangıç sınıfında (Program.cs) bir servis konteyneri kullanarak servisleri kaydetmek ve gerektiğinde bu konteyner aracılığıyla servisleri çözümlemek
@@ -376,8 +403,11 @@ public class RedisCacheProvider : ICacheProvider
 
 **Şıklar:**
 A) Scoped
+
 B) Singleton
+
 C) Transient
+
 D) Instance
 
 **Cevap:** A) Scoped
