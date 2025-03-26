@@ -15,14 +15,10 @@
 ```
 
 **Şıklar:**
-
-A) Bir veritabanındaki öğrenci bilgilerini alfabetik sırayla listelemek
-
-B) Öğrenci bilgilerini HTML tablosu formatında görüntülemek
-
-C) Öğrenci kayıtlarını silmek için bir form oluşturmak
-
-D) Öğrencilerin bilgilerini düzenlemek için bir güncelleme formu sağlamak
+A) Bir veritabanındaki öğrenci bilgilerini alfabetik sırayla listelemek\n
+B) Öğrenci bilgilerini HTML tablosu formatında görüntülemek\n
+C) Öğrenci kayıtlarını silmek için bir form oluşturmak\n
+D) Öğrencilerin bilgilerini düzenlemek için bir güncelleme formu sağlamak\n
 
 **Cevap:** B) Öğrenci bilgilerini HTML tablosu formatında görüntülemek
 
@@ -39,10 +35,10 @@ D) Öğrencilerin bilgilerini düzenlemek için bir güncelleme formu sağlamak
 ```
 
 **Şıklar:**
-A) Header bölümünü başka bir sayfadan içe aktarmak
-B) Header bölümünü CSS ile stilize etmek
-C) Header bölümünde JavaScript kodu çalıştırmak
-D) Header bölümünü veritabanına kaydetmek
+A) Header bölümünü başka bir sayfadan içe aktarmak\n
+B) Header bölümünü CSS ile stilize etmek\n
+C) Header bölümünde JavaScript kodu çalıştırmak\n
+D) Header bölümünü veritabanına kaydetmek\n
 
 **Cevap:** A) Header bölümünü başka bir sayfadan içe aktarmak
 
@@ -56,10 +52,10 @@ D) Header bölümünü veritabanına kaydetmek
 **Soru:** <input> elementlerinin asp-for özelliği ne işe yarar?
 
 **Şıklar:**
-A) Gönderilecek form verilerini doğrulamak için kullanılır
-B) Formun hangi controller'a ve hangi action'a gönderileceğini belirtir
-C) Form elemanlarını modeldeki ilgili özelliklerle ilişkilendirir
-D) HTML elementlerine CSS sınıfları eklemek için kullanılır
+A) Gönderilecek form verilerini doğrulamak için kullanılır\n
+B) Formun hangi controller'a ve hangi action'a gönderileceğini belirtir\n
+C) Form elemanlarını modeldeki ilgili özelliklerle ilişkilendirir\n
+D) HTML elementlerine CSS sınıfları eklemek için kullanılır\n
 
 **Cevap:** C) Form elemanlarını modeldeki ilgili özelliklerle ilişkilendirir
 
@@ -73,10 +69,10 @@ D) HTML elementlerine CSS sınıfları eklemek için kullanılır
 **Soru:** Nesneye yönelik programlama dilinde, aşağıdakilerden hangisi model sınıfı ile entity sınıfı arasındaki temel bir farkı doğru bir şekilde açıklar?
 
 **Şıklar:**
-A) Model sınıfları veritabanı tablolarıyla doğrudan ilişkilendirilirken entity sınıfları veritabanı ile ilişkilendirilmez
-B) Entity sınıfları veritabanı tablolarını temsil eder ve genellikle
-C) Model sınıfları yalnızca veri taşımak için kullanılırken entity sınıfları hem veri taşıma hem de iş mantığı işlemleri gerçekleştirir
-D) Entity sınıfları yalnızca statik veriler içerirken model sınıfları dinamik verilerle çalışmak için tasarlanmıştır
+A) Model sınıfları veritabanı tablolarıyla doğrudan ilişkilendirilirken entity sınıfları veritabanı ile ilişkilendirilmez\n
+B) Entity sınıfları veritabanı tablolarını temsil eder ve genellikle\n
+C) Model sınıfları yalnızca veri taşımak için kullanılırken entity sınıfları hem veri taşıma hem de iş mantığı işlemleri gerçekleştirir\n
+D) Entity sınıfları yalnızca statik veriler içerirken model sınıfları dinamik verilerle çalışmak için tasarlanmıştır\n
 
 **Cevap:** C) Model sınıfları yalnızca veri taşımak için kullanılırken entity sınıfları hem veri taşıma hem de iş mantığı işlemleri gerçekleştirir
 
@@ -261,10 +257,10 @@ D) Belirtilen bir Department nesnesini güncelleyen bir Update(Department entity
 **Soru:** Dependency Injection kullanarak bir uygulamada servisleri yönetmek için aşağıdaki seçeneklerden hangisi en uygun yöntemdir?
 
 **Şıklar:**
-A) Tüm servis sınıflarını statik olarak tanımlamak ve doğrudan çağırmak
-B) Servisleri gerektiği yerde new anahtar kelimesi ile yeni nesneler olarak oluşturmak
-C) Uygulamanın başlangıç sınıfında (Program.cs) bir servis konteyneri kullanarak servisleri kaydetmek ve gerektiğinde bu konteyner aracılığıyla servisleri çözümlemek
-D) Veritabanı bağlantılarını her seferinde yeniden oluşturmak ve bağımlılıkları manuel olarak yönetmek
+A) Tüm servis sınıflarını statik olarak tanımlamak ve doğrudan çağırmak\n
+B) Servisleri gerektiği yerde new anahtar kelimesi ile yeni nesneler olarak oluşturmak\n
+C) Uygulamanın başlangıç sınıfında (Program.cs) bir servis konteyneri kullanarak servisleri kaydetmek ve gerektiğinde bu konteyner aracılığıyla servisleri çözümlemek\n
+D) Veritabanı bağlantılarını her seferinde yeniden oluşturmak ve bağımlılıkları manuel olarak yönetmek\n
 
 **Cevap:** C) Uygulamanın başlangıç sınıfında (Program.cs) bir servis konteyneri kullanarak servisleri kaydetmek ve gerektiğinde bu konteyner aracılığıyla servisleri çözümlemek
 
@@ -375,10 +371,10 @@ public class RedisCacheProvider : ICacheProvider
 **Soru:** Bir .NET Core MVC uygulamasında her kullanıcı isteği için ayrı bir servis nesnesi oluşturmak istiyorsunuz, hangi dependency injection yaşam döngüsü türünü seçmelisiniz?
 
 **Şıklar:**
-A) Scoped
-B) Singleton
-C) Transient
-D) Instance
+A) Scoped\n
+B) Singleton\n
+C) Transient\n
+D) Instance\n
 
 **Cevap:** A) Scoped
 
