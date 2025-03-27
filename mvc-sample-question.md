@@ -9,13 +9,9 @@
 ```
 
 **Şıklar:**
-
 A) View'da kullanılacak model tipini belirtir
-
 B) Veritabanından öğrenci listesini çeker
-
 C) Yeni bir öğrenci listesi oluşturur
-
 D) Controller'a model tipini bildirir
 
 **Cevap:** A) View'da kullanılacak model tipini belirtir
@@ -32,13 +28,9 @@ D) Controller'a model tipini bildirir
 **Soru:** Tag Helper'ların avantajı nedir?
 
 **Şıklar:**
-
 A) Veritabanı bağlantısını hızlandırır
-
 B) Server-side özellikleri HTML benzeri syntax ile kullanmayı sağlar
-
 C) JavaScript kodlarını otomatik optimize eder
-
 D) View component'leri otomatik oluşturur
 
 **Cevap:** B) Server-side özellikleri HTML benzeri syntax ile kullanmayı sağlar
@@ -60,13 +52,9 @@ public IActionResult CreateStudent(StudentViewModel model)
 ```
 
 **Şıklar:**
-
 A) GET
-
 B) POST
-
 C) PUT
-
 D) DELETE
 
 **Cevap:** B) POST
@@ -83,13 +71,9 @@ D) DELETE
 **Soru:** ViewBag ve ViewData arasındaki fark nedir?
 
 **Şıklar:**
-
 A) ViewBag dinamik tiplidir, ViewData dictionary kullanır
-
 B) ViewBag kalıcı depolama sağlar, ViewData geçicidir
-
 C) ViewBag sadece string değerler alır, ViewData her türlü veriyi alır
-
 D) ViewBag ve ViewData aynı şeydir, sadece isimleri farklıdır
 
 **Cevap:** A) ViewBag dinamik tiplidir, ViewData dictionary kullanır
@@ -110,13 +94,9 @@ D) ViewBag ve ViewData aynı şeydir, sadece isimleri farklıdır
 ```
 
 **Şıklar:**
-
 A) Sadece API controller'ları için geçerli bir route tanımı
-
 B) Controller ve action isimlerini otomatik olarak route'a ekler, id parametresi opsiyoneldir
-
 C) Tüm controller'lar için varsayılan route tanımı
-
 D) Sadece belirli bir controller için özel route tanımı
 
 **Cevap:** B) Controller ve action isimlerini otomatik olarak route'a ekler, id parametresi opsiyoneldir
@@ -133,13 +113,9 @@ D) Sadece belirli bir controller için özel route tanımı
 **Soru:** Model validation için aşağıdaki attribute'lardan hangisi yanlıştır?
 
 **Şıklar:**
-
 A) [Required]
-
 B) [StringValidation]
-
 C) [MaxLength(50)]
-
 D) [EmailAddress]
 
 **Cevap:** B) [StringValidation]
@@ -157,13 +133,9 @@ D) [EmailAddress]
 **Soru:** DbContext sınıfı için aşağıdakilerden hangisi doğrudur?
 
 **Şıklar:**
-
 A) Her request için yeni bir instance oluşturulmalıdır
-
 B) Tüm uygulama için tek bir instance kullanılmalıdır
-
 C) Her method için yeni bir instance oluşturulmalıdır
-
 D) Instance oluşturmaya gerek yoktur, statik methodlar kullanılır
 
 **Cevap:** A) Her request için yeni bir instance oluşturulmalıdır
@@ -186,13 +158,9 @@ D) Instance oluşturmaya gerek yoktur, statik methodlar kullanılır
 ```
 
 **Şıklar:**
-
 A) Sayfanın CSS dosyasını belirler
-
 B) Sayfanın master template'ini belirler
-
 C) Sayfanın JavaScript dosyalarını yükler
-
 D) Sayfanın meta tag'lerini ayarlar
 
 **Cevap:** B) Sayfanın master template'ini belirler
@@ -209,13 +177,9 @@ D) Sayfanın meta tag'lerini ayarlar
 **Soru:** Dependency Injection için aşağıdaki servis kayıt yöntemlerinden hangisi yanlıştır?
 
 **Şıklar:**
-
 A) services.AddScoped<IService, Service>()
-
 B) services.AddSingleton<IService, Service>()
-
 C) services.AddTransient<IService, Service>()
-
 D) services.AddStatic<IService, Service>()
 
 **Cevap:** D) services.AddStatic<IService, Service>()
@@ -233,13 +197,9 @@ D) services.AddStatic<IService, Service>()
 **Soru:** Action method'da return View(model) ile ne yapılır?
 
 **Şıklar:**
-
 A) Model'i JSON formatında döndürür
-
 B) Model'i view'a paslar ve view'ı render eder
-
 C) Model'i veritabanına kaydeder
-
 D) Model'i başka bir action'a yönlendirir
 
 **Cevap:** B) Model'i view'a paslar ve view'ı render eder
@@ -250,6 +210,8 @@ D) Model'i başka bir action'a yönlendirir
 - Model verisi view'a aktarılır
 - View engine view'ı render eder
 - HTML çıktısı oluşturulur
+
+[Diğer 10 soru benzer formatta devam eder...]
 
 ## Soru 11
 
@@ -275,13 +237,9 @@ public class StudentController inherits Controller
 ```
 
 **Şıklar:**
-
 A) 2
-
 B) 3
-
 C) 4
-
 D) 5
 
 **Cevap:** C) 4
@@ -299,13 +257,9 @@ Hatalar:
 **Soru:** View Component'in doğru kullanımı hangisidir?
 
 **Şıklar:**
-
 A) `@Component.InvokeAsync("CartSummary")`
-
 B) `@await Component.InvokeAsync("CartSummary")`
-
 C) `@Html.RenderComponent("CartSummary")`
-
 D) `@RenderComponent("CartSummary")`
 
 **Cevap:** B) `@await Component.InvokeAsync("CartSummary")`
@@ -336,13 +290,9 @@ public class ProductModel
 ```
 
 **Şıklar:**
-
 A) 2 hata
-
 B) 3 hata
-
 C) 4 hata
-
 D) 5 hata
 
 **Cevap:** B) 3 hata
@@ -377,13 +327,9 @@ public class CacheService : IMemoryCache
 ```
 
 **Şıklar:**
-
 A) Interface eksik method implementasyonları
-
 B) MemoryCache yanlış instantiate edilmiş
-
 C) TimeSpan kullanımı hatalı
-
 D) Generic tip kullanılmamış
 
 **Cevap:** A) Interface eksik method implementasyonları
@@ -409,13 +355,9 @@ app.Use(async (context, next) =>
 ```
 
 **Şıklar:**
-
 A) Use methodu yanlış kullanılmış
-
 B) async/await eksik kullanılmış
-
 C) next() methodu await edilmemiş
-
 D) WriteAsync yanlış kullanılmış
 
 **Cevap:** C) next() methodu await edilmemiş
@@ -436,13 +378,9 @@ D) WriteAsync yanlış kullanılmış
 ```
 
 **Şıklar:**
-
 A) Controller token yanlış yazılmış
-
 B) Action token yanlış yazılmış
-
 C) Opsiyonel parametre sonra gelmeli
-
 D) Route syntax'ı hatalı
 
 **Cevap:** C) Opsiyonel parametre sonra gelmeli
@@ -463,13 +401,9 @@ public IActionResult Update([FromForm]int id, [FromBody]ProductModel model)
 ```
 
 **Şıklar:**
-
 A) FromForm ve FromBody birlikte kullanılamaz
-
 B) int için FromForm kullanılamaz
-
 C) ProductModel için FromBody kullanılamaz
-
 D) Action method adı hatalı
 
 **Cevap:** A) FromForm ve FromBody birlikte kullanılamaz
@@ -495,13 +429,9 @@ public class ShopContext : DbContext
 ```
 
 **Şıklar:**
-
 A) 1 hata
-
 B) 2 hata
-
 C) 3 hata
-
 D) Hata yok
 
 **Cevap:** C) 3 hata
@@ -530,13 +460,9 @@ public class CustomRangeAttribute : ValidationAttribute
 ```
 
 **Şıklar:**
-
 A) Base class yanlış
-
 B) Method signature eksik
-
 C) Return type hatalı
-
 D) Validation logic hatalı
 
 **Cevap:** B) Method signature eksik
@@ -565,13 +491,9 @@ public async Task<ActionResult> Create(ProductModel model)
 ```
 
 **Şıklar:**
-
 A) async method içinde await kullanılmamış
-
 B) ModelState kontrolü yanlış
-
 C) Return type hatalı
-
 D) RedirectToAction yanlış kullanılmış
 
 **Cevap:** A) async method içinde await kullanılmamış
