@@ -1,5 +1,193 @@
-[İlk 10 soru yukarıdaki gibi devam eder...]
+# ASP.NET Core MVC Örnek Sınav Soruları
 
+## Soru 1
+**Soru:** Aşağıdaki Razor syntax'ı ne işe yarar?
+```csharp
+@model List<Student>
+```
+
+**Şıklar:**
+A) View'da kullanılacak model tipini belirtir
+B) Veritabanından öğrenci listesini çeker
+C) Yeni bir öğrenci listesi oluşturur
+D) Controller'a model tipini bildirir
+
+**Cevap:** A) View'da kullanılacak model tipini belirtir
+
+**Açıklama:**
+- View dosyasının başında model tipini belirtmek için kullanılır
+- Strongly-typed view oluşturmayı sağlar
+- IntelliSense desteği sağlar
+- Compile-time type checking sağlar
+
+## Soru 2
+**Soru:** Tag Helper'ların avantajı nedir?
+
+**Şıklar:**
+A) Veritabanı bağlantısını hızlandırır
+B) Server-side özellikleri HTML benzeri syntax ile kullanmayı sağlar
+C) JavaScript kodlarını otomatik optimize eder
+D) View component'leri otomatik oluşturur
+
+**Cevap:** B) Server-side özellikleri HTML benzeri syntax ile kullanmayı sağlar
+
+**Açıklama:**
+- HTML-friendly syntax sunar
+- IntelliSense desteği sağlar
+- Daha okunabilir kod yazımı sağlar
+- Server-side özellikleri HTML elementlerine ekler
+
+## Soru 3
+**Soru:** Aşağıdaki action method hangi HTTP metoduna yanıt verir?
+```csharp
+[HttpPost]
+public IActionResult CreateStudent(StudentViewModel model)
+```
+
+**Şıklar:**
+A) GET
+B) POST
+C) PUT
+D) DELETE
+
+**Cevap:** B) POST
+
+**Açıklama:**
+- [HttpPost] attribute'u POST isteklerini işler
+- Genellikle form submit işlemlerinde kullanılır
+- Veri oluşturma işlemleri için kullanılır
+- Body içinde veri göndermeyi sağlar
+
+## Soru 4
+**Soru:** ViewBag ve ViewData arasındaki fark nedir?
+
+**Şıklar:**
+A) ViewBag dinamik tiplidir, ViewData dictionary kullanır
+B) ViewBag kalıcı depolama sağlar, ViewData geçicidir
+C) ViewBag sadece string değerler alır, ViewData her türlü veriyi alır
+D) ViewBag ve ViewData aynı şeydir, sadece isimleri farklıdır
+
+**Cevap:** A) ViewBag dinamik tiplidir, ViewData dictionary kullanır
+
+**Açıklama:**
+- ViewBag dynamic özelliğini kullanır
+- ViewData bir dictionary'dir
+- İkisi de controller'dan view'a veri taşır
+- İkisi de tek request için geçerlidir
+
+## Soru 5
+**Soru:** Aşağıdaki routing tanımı ne anlama gelir?
+```csharp
+[Route("api/[controller]/[action]/{id?}")]
+```
+
+**Şıklar:**
+A) Sadece API controller'ları için geçerli bir route tanımı
+B) Controller ve action isimlerini otomatik olarak route'a ekler, id parametresi opsiyoneldir
+C) Tüm controller'lar için varsayılan route tanımı
+D) Sadece belirli bir controller için özel route tanımı
+
+**Cevap:** B) Controller ve action isimlerini otomatik olarak route'a ekler, id parametresi opsiyoneldir
+
+**Açıklama:**
+- [controller] token'ı controller ismini alır
+- [action] token'ı action method ismini alır
+- {id?} opsiyonel bir route parametresidir
+- api prefix'i API rotalarını belirtir
+
+## Soru 6
+**Soru:** Model validation için aşağıdaki attribute'lardan hangisi yanlıştır?
+
+**Şıklar:**
+A) [Required]
+B) [StringValidation]
+C) [MaxLength(50)]
+D) [EmailAddress]
+
+**Cevap:** B) [StringValidation]
+
+**Açıklama:**
+- [StringValidation] diye bir validation attribute yoktur
+- Doğru attribute'lar:
+  - [Required] - zorunlu alan
+  - [MaxLength] - maksimum uzunluk
+  - [EmailAddress] - email format kontrolü
+
+## Soru 7
+**Soru:** DbContext sınıfı için aşağıdakilerden hangisi doğrudur?
+
+**Şıklar:**
+A) Her request için yeni bir instance oluşturulmalıdır
+B) Tüm uygulama için tek bir instance kullanılmalıdır
+C) Her method için yeni bir instance oluşturulmalıdır
+D) Instance oluşturmaya gerek yoktur, statik methodlar kullanılır
+
+**Cevap:** A) Her request için yeni bir instance oluşturulmalıdır
+
+**Açıklama:**
+- DbContext Scoped lifetime ile kullanılmalıdır
+- Her HTTP request için yeni instance oluşur
+- Memory leak'leri önler
+- Connection yönetimini optimize eder
+
+## Soru 8
+**Soru:** Aşağıdaki Layout tanımı ne işe yarar?
+```csharp
+@{
+    Layout = "_MainLayout";
+}
+```
+
+**Şıklar:**
+A) Sayfanın CSS dosyasını belirler
+B) Sayfanın master template'ini belirler
+C) Sayfanın JavaScript dosyalarını yükler
+D) Sayfanın meta tag'lerini ayarlar
+
+**Cevap:** B) Sayfanın master template'ini belirler
+
+**Açıklama:**
+- Layout sayfası tüm sayfalarda ortak kullanılacak template'i belirler
+- Header, footer gibi ortak alanları içerir
+- @RenderBody() ile içerik alanını belirler
+- Tutarlı sayfa yapısı sağlar
+
+## Soru 9
+**Soru:** Dependency Injection için aşağıdaki servis kayıt yöntemlerinden hangisi yanlıştır?
+
+**Şıklar:**
+A) services.AddScoped<IService, Service>()
+B) services.AddSingleton<IService, Service>()
+C) services.AddTransient<IService, Service>()
+D) services.AddStatic<IService, Service>()
+
+**Cevap:** D) services.AddStatic<IService, Service>()
+
+**Açıklama:**
+- AddStatic diye bir method yoktur
+- Doğru servis kayıt methodları:
+  - AddScoped - request bazlı
+  - AddSingleton - tek instance
+  - AddTransient - her inject'te yeni instance
+
+## Soru 10
+**Soru:** Action method'da return View(model) ile ne yapılır?
+
+**Şıklar:**
+A) Model'i JSON formatında döndürür
+B) Model'i view'a paslar ve view'ı render eder
+C) Model'i veritabanına kaydeder
+D) Model'i başka bir action'a yönlendirir
+
+**Cevap:** B) Model'i view'a paslar ve view'ı render eder
+
+**Açıklama:**
+- View() methodu bir ViewResult döndürür
+- Model verisi view'a aktarılır
+- View engine view'ı render eder
+- HTML çıktısı oluşturulur
+
+[Diğer 10 soru benzer formatta devam eder...]
 ## Soru 11
 **Soru:** Aşağıdaki controller kodunda kaç hata vardır?
 
